@@ -135,7 +135,7 @@ expenseTracker.addExpense('Обед в кафе', 12, 'Еда');
 expenseTracker.printAllExpenses();
 expenseTracker.getTotalAmount();
 expenseTracker.getExpensesByCategory('Еда');
-const found = expenseTracker.findExpenseByTitle('кофе');
+expenseTracker.findExpenseByTitle('кофе'); // смотреть
 
 expenseTracker.removeExpenseById(2);
 expenseTracker.printAllExpenses();
