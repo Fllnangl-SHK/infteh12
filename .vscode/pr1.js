@@ -23,7 +23,7 @@ const expenseTracker = {
     return true;
   },
 
-  // 1. Добавляем куда потратили свои шейкели
+  // 1. Добавляем куда потратили свои шейкели (метод addExpense)
   addExpense(title, amount, category) {
     if (!this._validateExpenseInput(title, amount, category)) {
       return;
@@ -38,7 +38,7 @@ const expenseTracker = {
     console.log('Расход добавлен:', newExpense);
   },
 
-  // 2. Вывод всего куда потратились (всех расходов)
+  // 2. Вывод всего куда потратились (всех расходов) (printAllExpenses)
   printAllExpenses() {
     if (this.expenses.length === 0) {
       console.log('Список расходов пуст.');
