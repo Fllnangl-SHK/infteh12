@@ -1,7 +1,7 @@
 const expenseTracker = {
   expenses: [],
 
-  // Генератор уникальных id (можно улучшить если нужно)
+  // Генерируем id (djpvj;yj lf;t eybrfkmyst)
   _generateId() {
     return this.expenses.length ? this.expenses[this.expenses.length - 1].id + 1 : 1;
   },
@@ -23,7 +23,7 @@ const expenseTracker = {
     return true;
   },
 
-  // 1. Добавление расхода
+  // 1. Добавляем куда потратили свои шейкели
   addExpense(title, amount, category) {
     if (!this._validateExpenseInput(title, amount, category)) {
       return;
@@ -38,7 +38,7 @@ const expenseTracker = {
     console.log('Расход добавлен:', newExpense);
   },
 
-  // 2. Вывод всех расходов
+  // 2. Вывод всего куда потратились (всех расходов)
   printAllExpenses() {
     if (this.expenses.length === 0) {
       console.log('Список расходов пуст.');
@@ -127,7 +127,7 @@ const expenseTracker = {
   }
 };
 
-// Примеры использования:
+// Пример :)
 expenseTracker.addExpense('Кофе', 3.5, 'Еда');
 expenseTracker.addExpense('Бензин', 20, 'Транспорт');
 expenseTracker.addExpense('Обед в кафе', 12, 'Еда');
